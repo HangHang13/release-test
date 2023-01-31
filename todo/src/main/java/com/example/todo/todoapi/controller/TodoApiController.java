@@ -3,7 +3,6 @@ package com.example.todo.todoapi.controller;
 import com.example.todo.todoapi.dto.request.TodoCreateRequestDTO;
 import com.example.todo.todoapi.dto.request.TodoModifyRequestDTO;
 import com.example.todo.todoapi.dto.response.TodoListResponseDTO;
-import com.example.todo.todoapi.repository.TodoRepository;
 import com.example.todo.todoapi.service.TodoService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -14,8 +13,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 
-@CrossOrigin(origins = "http://localhost:3000/")
-//@CrossOrigin(origins = "*")
+//@CrossOrigin(origins = "http://localhost:3000/")
 @RestController
 @Slf4j
 @RequiredArgsConstructor

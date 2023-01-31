@@ -41,7 +41,7 @@ class UserRepositoryTest {
         UserEntity foundUser = userRepository.findByEmail(email);
         //then
 
-        assertEquals("말똥이", foundUser.getUserName());
+        assertEquals("키키킥", foundUser.getUserName());
     }
 
     @Test
