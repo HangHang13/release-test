@@ -25,7 +25,7 @@ public class UserApiController {
     private final UserService userService;
 
     //회원가입 요청처리
-    @PostMapping("/signUp")
+    @PostMapping("/signup")
     public ResponseEntity<?> signUp(@Validated @RequestBody UserSignUpDTO dto, BindingResult result){
         log.info("/api/auth/signUp POST - {}", dto);
         if (dto==null){
