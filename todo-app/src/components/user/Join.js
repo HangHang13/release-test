@@ -71,6 +71,7 @@ const Join = () => {
 
   // 이메일 중복확인 요청 함수
   const checkEmail = email => {
+    console.log(API_BASE_URL)
       fetch(`${API_BASE_URL}/check?email=${email}`)
         .then(res => res.json())
         .then(flag => {
@@ -214,7 +215,7 @@ const Join = () => {
      if (isValid()) {
         // alert('회원가입 이제 보낼게~~');
 
-        fetch(`${API_BASE_URL}/signUp`, {
+        fetch(`${API_BASE_URL}/signup`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
