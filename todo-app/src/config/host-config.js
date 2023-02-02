@@ -1,13 +1,13 @@
 
-let backendHost; //백엔드 호스트 주소
-
-//브라우저가 현재 클라이언트 호스트 이름 얻어오기
+// 브라우저가 현재 클라이언트 호스트 이름 얻어오기
 const hostname = window.location.hostname;
-if (hostname === "localhost"){
+
+let backendHost; // 백엔드 호스트 이름
+
+if (hostname === 'localhost') {
     backendHost = 'http://localhost:8080';
-    
-}else if (hostname ==='lalala.com'){
-    backendHost = 'http://lalala.com';
+} else if (hostname === 'todo-self-hanghang.s3-website.ap-northeast-2.amazonaws.com') {
+    backendHost = 'http://54.180.29.2';
 }
 
 export const BASE_URL = backendHost;
