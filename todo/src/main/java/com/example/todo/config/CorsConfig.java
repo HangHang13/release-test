@@ -13,7 +13,7 @@ public class CorsConfig implements WebMvcConfigurer {
         //api cors 정책 설정
         registry.addMapping("/api/**")
                 .allowedOrigins("http://localhost:3000","http://todo-self-hanghang.s3-website.ap-northeast-2.amazonaws.com") //api 요청 허용 URL
-                .allowedMethods("GET","POST","DELETE","PUT")
+                .allowedMethods("GET","POST","DELETE","PUT","PATCH")
                 .allowedHeaders("*")
                 .allowCredentials(true) //자격증명하고와라
                 .maxAge(3600); //1시간
